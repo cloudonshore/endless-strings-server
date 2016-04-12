@@ -10,7 +10,7 @@ var passport = require('passport');
 var config = require('config');
 
 var app = express();
-var port = 8812;
+var port = 8877;
 
 // Connect to mongodb
 var connect = function () {
