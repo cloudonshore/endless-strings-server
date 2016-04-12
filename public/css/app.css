@@ -1,0 +1,33 @@
+
+body {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif;
+  line-height: 1.4;
+  color: #333333;
+  background: #fff;
+  padding: 50px;
+}
+
+.header > div {
+	display: inline-block;
+}
+
+.header img {
+	width: 100%;
+}
+
+.title-image {
+	opacity: .7;
+	margin-top: 20px;
+}
+
+.header-left {
+	max-width: 60%;
+	width: 600px;
+	float: left;
+}
+
+.header-right {
+	max-width: 35%;
+	width: 400px;
+	float: right;
+}
