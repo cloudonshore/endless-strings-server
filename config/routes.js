@@ -13,7 +13,14 @@ var home = require('home');
 module.exports = function (app, passport) {
   
   app.get('/songs', function(req, res) {
-    mongoose.model('Song').find(function(err, song) {
+    var query = req.query, limit = query.limit, offset = query.offset;
+    var query = mongoose
+      .model('Song')
+      .find()
+      .skip(offset)
+      .limit(limit);
+
+    query.exec(function(err, song) {
       res.send(song);
     });
   });
